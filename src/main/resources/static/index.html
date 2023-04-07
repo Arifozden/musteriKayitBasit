@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Musteri</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Musteri</h2>
+            <form class="form-group">
+            <div class="form-group">
+                <label for="isim">Isim</label>
+                <input type="text" class="form-control" id="isim">
+            </div>
+                <div class="form-group">
+                <label for="adres">Adres</label>
+                <input type="text" class="form-control" id="adres">
+        </div>
+        </form>
+            <button class="btn btn-primary" onclick="musteriKayit()">Kaydet</button>
+            <br>
+    </div>
+        <div class="col-md-8">
+            <h3>Tum Musteriler</h3>
+            <div id="musteriler"></div>
+            <button class="btn btn-danger" onclick="hepsiniSil()">Kayitlari sil</button>
+        </div>
+</div>
+</div>
+<script src="musteri.js"></script>
+</body>
+</html>
